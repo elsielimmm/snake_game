@@ -1,53 +1,44 @@
-# Snake
+****Snake Game – Artificial Intelligence Project****
+Môn học: Chuyên đề 2
+Báo cáo cuối kỳ – Nhóm 21.44
+**Thành viên thực hiện:**
 
-The project focuses on the artificial intelligence of the [Snake][snake-wiki] game. The snake's goal is to eat the food continuously and fill the map with its bodies as soon as possible. Originally, the project was [written in C++][snake-cpp]. It has now been rewritten in Python for a user-friendly GUI and the simplicity in algorithm implementations.
+Phạm Thị Phương
 
-***[Algorithms >][doc-algorithms]***
+Dương Thị Thảo Vi
 
-## Experiments
+Nguyễn Văn An
 
-We use two metrics to evaluate the performance of an AI:
+**1. Giới thiệu dự án**
 
-1. **Average Length:** Average length the snake has grown to (*max:* 64).
-2. **Average Steps:** Average steps the snake has moved.
+Dự án tập trung xây dựng và phân tích cho trò chơi Snake.
+Mục tiêu của rắn là di chuyển, ăn thức ăn liên tục và lấp đầy toàn bộ bản đồ mà không va vào tường hoặc chính cơ thể mình.
 
-Test results (averaged over 1000 episodes):
+Các thuật toán được áp dụng:
 
-| Solver | Demo (optimal) | Average Length | Average Steps |
-| :----: | :------------: | :------------: | :-----------: |
-|[Hamilton][doc-hamilton]|![][demo-hamilton]|63.93|717.83|
-|[Greedy][doc-greedy]|![][demo-greedy]|60.15|904.56|
-|[DQN][doc-dqn]<br>(experimental)|![][demo-dqn]|24.44|131.69|
+Greedy Solver
 
-## Installation
+Hamilton Solver
 
-Requirements: Python 3.6+ with [Tkinter][doc-tkinter] installed.
+Deep Q-Network (DQN)
 
-```
+Chi tiết thuật toán có trong tài liệu Algorithms.
+
+**2. Cài đặt môi trường**
+Yêu cầu:
+
+Python 3.6+
+
+Thư viện Tkinter (tích hợp sẵn trong hầu hết phiên bản Python)
+
+Cài đặt thư viện:
 pip install -r requirements.txt
+
+Chạy chương trình:
 python run.py [-h]
-```
 
-Run unit tests:
-
-```
+Chạy unit tests:
 python -m pytest
-```
-
-## License
-
-See the [LICENSE](./LICENSE) file for license rights and limitations.
 
 
-[snake-wiki]: https://en.wikipedia.org/wiki/Snake_(video_game)
-[snake-cpp]: https://github.com/chuyangliu/snake/tree/7227f5e0f3185b07e9e3de1ac5c19a17b9de3e3c
 
-[doc-tkinter]: https://docs.python.org/3/library/tkinter.html
-[doc-algorithms]: ./docs/algorithms.md
-[doc-greedy]: ./docs/algorithms.md#greedy-solver
-[doc-hamilton]: ./docs/algorithms.md#hamilton-solver
-[doc-dqn]: ./docs/algorithms.md#dqn-solver
-
-[demo-hamilton]: ./docs/images/solver_hamilton.gif
-[demo-greedy]: ./docs/images/solver_greedy.gif
-[demo-dqn]: ./docs/images/solver_dqn.gif
