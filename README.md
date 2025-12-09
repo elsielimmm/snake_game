@@ -3,6 +3,8 @@ Subject: Chuyên đề 2
 
 Final Project - Group: 21.44
 
+Instructor: Dr. Nguyễn Văn Hiếu
+
 ## Member
 
 | Name              | Student ID    |
