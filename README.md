@@ -1,11 +1,13 @@
-# Project: Snake Game 
-Subject: Chuyên đề 2
+# Dự án: Xây dựng thuật toán cho trò chơi rắn tìm đường
+Môn học: Chuyên đề 2
 
-Final Project - Group: 21.44
+Giảng viên hướng dẫn: TS. Nguyễn Văn Hiếu
 
-Instructor: Dr. Nguyễn Văn Hiếu
+Báo cáo cuối kỳ - Lớp học phần: 21.44
 
-## Member
+Nhóm 5
+
+## Thành viên 
 
 | Name              | Student ID    |
 | ----------------- | ------------- |
@@ -13,24 +15,20 @@ Instructor: Dr. Nguyễn Văn Hiếu
 | Phạm Thị Phương | **106210050** |
 | Dương Thị Thảo Vi     | **10621259**  |
 
-## Project Description 
+## Mô tả dự án 
 
-### Snake Game – Pathfinding & AI Solvers
+### Xây dựng thuật toán cho trò chơi rắn tìm đường
 
-This project implements an intelligent version of the classic Snake Game where the snake automatically finds the safest and most optimal path to reach food on an 8×8 grid. The game integrates multiple algorithms—including Hamiltonian cycles, Greedy pathfinding, and DQN (Deep Q-Network)—to compare different solving strategies.
+Dự án này triển khai một phiên bản thông minh của trò chơi Rắn (Snake Game) cổ điển, trong đó con rắn có khả năng **tự động tìm ra đường đi an toàn và tối ưu** để tiếp cận thức ăn trên lưới 8×8. Trò chơi tích hợp nhiều thuật toán khác nhau, bao gồm **chu trình Hamilton**, **tìm đường tham lam (Greedy)** và **DQN (Deep Q-Network)**, nhằm so sánh các chiến lược giải quyết khác nhau.
 
-The main goal is to evaluate how deterministic algorithms (Hamilton, BFS-based shortest/longest paths, Greedy logic) and learning-based approaches (DQN) perform in navigating a confined grid without collisions while maximizing the amount of food consumed.
+Mục tiêu chính của dự án là đánh giá hiệu quả của các **thuật toán xác định** (Hamilton, BFS tìm đường ngắn nhất/dài nhất, logic Greedy) và các **phương pháp học máy** (DQN) trong việc điều hướng trên không gian lưới giới hạn, tránh va chạm và tối đa hóa lượng thức ăn thu thập được.
 
-### The project includes:
+### Dự án gồm:
 
-- Hamilton Solver: Builds and follows a Hamiltonian cycle to guarantee safe traversal of the entire map. Supports shortcut optimization to reduce unnecessary movement.
+- **Hamilton Solver**: Xây dựng và di chuyển theo một chu trình Hamilton để đảm bảo duyệt an toàn toàn bộ bản đồ. Hỗ trợ tối ưu đường tắt nhằm giảm các bước di chuyển không cần thiết.
 
-- Greedy Solver: Uses shortest-path BFS and safety checks to move toward food if safe, otherwise follows a longest path to avoid self-collisions.
+- **Greedy Solver**: Sử dụng BFS tìm đường ngắn nhất kết hợp với kiểm tra an toàn để tiến về phía thức ăn khi có thể; trong trường hợp không an toàn, hệ thống sẽ lựa chọn đường đi dài nhất để tránh va chạm với chính cơ thể rắn.
 
-- Path Solver: Provides shortest (BFS) and heuristic longest path generation within the grid.
+- **Path Solver**: Cung cấp khả năng sinh đường đi ngắn nhất (BFS) và đường đi dài nhất dựa trên heuristic trong lưới.
 
-- DQN Solver: Trains a reinforcement learning agent to control the snake using DQN with Double DQN, Prioritized Replay, and Dueling Network extensions.
-
-Comparative Analysis: Measures efficiency, survival length, and number of steps among different solvers.
-
-This project demonstrates both algorithmic pathfinding techniques and deep reinforcement learning, providing a comprehensive study of AI behavior in constrained environments.
+- **DQN Solver**: Huấn luyện tác nhân bằng học tăng cường để điều khiển rắn thông qua mô hình DQN.
